@@ -1,0 +1,17 @@
+.legend-container {
+    border-left: 5px solid !important;
+    border: 3px solid !important;
+    border-color: #ED4C21 !important;
+    border-radius: 4px !important;
+}
+.perspective-container {
+    border: 5px solid !important;
+    border-radius: 10px !important;
+    border-color: #61D41A !important;
+}
+
+.toolBar-border {
+    border: 2px solid !important;
+    border-color: #179DEF !important;
+    border-radius: 10px !important;
+}
