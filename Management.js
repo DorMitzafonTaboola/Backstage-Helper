@@ -1,21 +1,26 @@
-var managementBar = document.getElementsByTagName('tbody');
-var Headlines = document.getElementsByTagName('thead')['0'].firstChild.children;
-var HeadlinesIndex = 5;
+//Buttons on right side
+var managementBar = $('tr:first-child td:last-child');
+$(managementBar).find('a:first-child').addClass('activate-border');
+$(managementBar).find('.fa-pencil').first().parent().addClass('properties-border');
+$(managementBar).find('.fa-list').first().parent().addClass('EditInventory-border');
+$(managementBar).find('.fa-files-o').first().parent().addClass('DupInventory-border');
 
-if (managementBar['0'].firstChild.cells.length == 13)
-{
-    var rightEndTabs = managementBar['0'].firstChild.cells[12].children;
-    HeadlinesIndex = 6;
-}
-else
-{
-    var rightEndTabs = managementBar['0'].firstChild.cells[11].children;
-}
+//Headlines
+$('#sort-campaigns-spending_limit').addClass('headline-border');
+$('#sort-campaigns-cpc').addClass('headline-border');
 
-rightEndTabs[0].classList.add('activate-border');
-rightEndTabs[1].classList.add('properties-border');
-rightEndTabs[2].classList.add('EditInventory-border');
-rightEndTabs[3].classList.add('DupInventory-border');
+//Spending Limit headline
+$('#sort-campaigns-spending_limit').mouseover(function() {
+    $(this).append("<div id='Box' class='SpendingLimit'>Shows the spending limit of each campaign</div>");
+});
+$('#sort-campaigns-spending_limit').mouseleave(function() {
+    $(this).find('.SpendingLimit').remove();
+});
 
-Headlines[HeadlinesIndex].classList.add('headline-border');
-Headlines[HeadlinesIndex + 2].classList.add('headline-border');
+//CPC headline
+$('#sort-campaigns-cpc').mouseover(function() {
+    $(this).append("<div id='Box' class='cpc'>Shows the Cost-per-Click of each campaign</div>");
+});
+$('#sort-campaigns-cpc').mouseleave(function() {
+    $(this).find('.cpc').remove();
+});

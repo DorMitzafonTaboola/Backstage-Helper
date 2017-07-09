@@ -1,17 +1,58 @@
 .legend-container {
-    border-left: 5px solid !important;
     border: 3px solid !important;
-    border-color: #ED4C21 !important;
+    border-color: #FFCB0A !important;
     border-radius: 4px !important;
 }
 .perspective-container {
     border: 5px solid !important;
     border-radius: 10px !important;
-    border-color: #61D41A !important;
+    border-color: #63C786 !important;
 }
 
 .toolBar-border {
     border: 2px solid !important;
-    border-color: #179DEF !important;
+    border-color: #187BF8 !important;
     border-radius: 10px !important;
+}
+
+#DayBox {
+    position: absolute;
+    z-index: 4000;
+    width: 200px;
+    height: 70px;
+    margin-top: 60px !important;
+    font-size: 14px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #187BF8;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.tabBox {
+    height: 120px !important;
+}
+
+.highlight {
+    box-shadow: 3px 3px 15px #666 !important;
+    background: #FFCB0A !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    /*Opacity*/
+    zoom: 1 !important;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+}
+
+.font-change {
+    font-weight: 900 !important;
+    color: black !important;
 }

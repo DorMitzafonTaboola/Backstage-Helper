@@ -2,20 +2,20 @@
   "manifest_version": 2,
 
   "name": "Taboola's Backstage helper",
-  "description": "This extension will mark important details on Backstage",
+  "description": "Highlights important buttons and details on Backstage",
   "version": "1.0",
   "icons": {
-    "16": "Taboola16.png",
-    "48": "Taboola48.png",
-    "128": "Taboola128.png"
+    "16": "Marker.png",
+    "48": "Marker.png",
+    "128": "Marker.png"
   },
 
   "browser_action": {
-    "default_title": "Taboola's Backstage indicator"
+    "default_title": "BackStage Helper"
   },
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["jquery-3.2.1.min.js","background.js"]
   },
   "permissions": [
     "background",

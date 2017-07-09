@@ -1,6 +1,7 @@
 function click(e) {
     chrome.tabs.query({currentWindow:true, active:true}, function(tabs) {
         var specTab = tabs[0];
+        chrome.tabs.executeScript({file: "jquery-3.2.1.min.js"});
         if (specTab.title == "Campaigns: Campaign Summary")
         {
             chrome.tabs.executeScript({file: "Summary.js"});
@@ -19,7 +20,7 @@ function click(e) {
         else
         {
             chrome.tabs.executeScript({file: "Inventory.js"});
-            chrome.tabs.insertCSS({file: "Inventory.css"});
+            chrome.tabs.insertCSS({file: "topCampaignContent.css"});
         }
     });
 }

@@ -1,3 +1,16 @@
 //#Top campaign content
-var campaign = document.getElementsByTagName('tbody');
-campaign['0'].children[0].classList.add('campaign-item');
+
+$('tbody tr:first').addClass('campaign-item');
+
+$('tbody tr:first').mouseover(function() {
+    $(this).addClass('highlight-parent');
+    $(this).children().addClass('highlight');
+    $('td').addClass('special');
+    // $(this).children().toggleClass('special');
+});
+
+$('tbody tr:first').mouseleave(function() {
+    $(this).children().removeClass('highlight');
+    $(this).removeClass('highlight-parent');
+    $('td').removeClass('special');
+});
