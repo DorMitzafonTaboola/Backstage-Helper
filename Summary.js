@@ -28,7 +28,7 @@ $(reportTabs).find('#tab-byperiod').mouseleave(function() {
 
 //By Campaign tab
 $(reportTabs).find("[data-target='#campaign_breakdown']").mouseover(function() {
-    $(this).append("<div id='DayBox' class='CampaignBox'>Press and this report will show your campaigns data by campaign</div>");
+    $(this).append("<div id='DayBox' class='CampaignBox'>This report will show your campaigns data by campaign</div>");
 });
 $(reportTabs).find("[data-target='#campaign_breakdown']").mouseleave(function() {
     $(this).find('.CampaignBox').remove();
@@ -37,7 +37,7 @@ $(reportTabs).find("[data-target='#campaign_breakdown']").mouseleave(function() 
 
 //By Site tab
 $(reportTabs).find("[data-target='#site_breakdown']").mouseover(function() {
-    $(this).append("<div id='DayBox' class='SiteBox'>Press and this report shows your campaigns data by traffic source (website)</div>");
+    $(this).append("<div id='DayBox' class='SiteBox'>This report shows your campaigns data by traffic source (website)</div>");
 });
 $(reportTabs).find("[data-target='#site_breakdown']").mouseleave(function() {
     $(this).find('.SiteBox').remove();
@@ -58,7 +58,7 @@ $(reportTabs).find('#tab-bygeo').mouseleave(function() {
 
 //By Platform Tab
 $(reportTabs).find("[data-target='#platform_breakdown']").mouseover(function() {
-    $(this).append("<div id='DayBox' class='PlatformBox'>Press and this report will show your campaigns data by platform</div>");
+    $(this).append("<div id='DayBox' class='PlatformBox'>This report will show your campaigns data by platform</div>");
 });
 $(reportTabs).find("[data-target='#platform_breakdown']").mouseleave(function() {
     $(reportTabs).parent().find('.PlatformBox').remove();
@@ -79,7 +79,7 @@ $(reportTabs).find("[data-target='#platform_breakdown']").mouseleave(function() 
 
 //By Audience Tab
 $(reportTabs).find("[data-target='#user_segment_breakdown']").mouseover(function() {
-    $(this).append("<div id='DayBox' class='AudienceBox'>Press and this report will show your campaign data by audience</div>");
+    $(this).append("<div id='DayBox' class='AudienceBox'>This report will show your campaign data by audience</div>");
 });
 $(reportTabs).find("[data-target='#user_segment_breakdown']").mouseleave(function() {
     $(reportTabs).parent().find('.AudienceBox').remove();

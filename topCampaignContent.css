@@ -4,7 +4,8 @@
 }
 
 .highlight-parent {
-    /*box-shadow: 3px 3px 15px #666 !important;*/
+    box-shadow: 3px 3px 15px #666 !important;
+    border-color: black !important;
 }
 
 .highlight {

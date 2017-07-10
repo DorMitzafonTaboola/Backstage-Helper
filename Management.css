@@ -1,30 +1,25 @@
 .activate-border {
     border: 4px solid !important;
     border-color: #4472c4 !important;
-    border-radius: 4px !important;
 }
 
 .properties-border {
     border: 4px solid !important;
     border-color: #5dba7a !important;
-    border-radius: 4px !important;
 }
 
 .EditInventory-border {
     border: 4px solid !important;
     border-color: #ffb600 !important;
-    border-radius: 4px !important;
 }
 
 .DupInventory-border {
     border: 4px solid !important;
-    border-radius: 4px !important;
     border-color: #04a1cb !important
 }
 
 .btn.new-campaign {
     border: 4px solid !important;
-    border-radius: 4px !important;
     border-color: #187BF8 !important;
 }
 
@@ -38,8 +33,7 @@
     position: absolute;
     z-index: 4000;
     width: 200px !important;
-    height: 50px !important;
-    margin-top: -80px !important;
+    height: 80px;
     font-size: 14px;
     font-family: "Helvetica Neue";
     font-weight: bold;
@@ -47,11 +41,64 @@
     padding: 10px;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: #63C786;
     top: 0;
     bottom: 0;
     left:0;
     right:0;
     margin: auto;
+}
+
+.SpendingLimit {
+    margin-top: -140px !important;
+    height: 100px !important;
+}
+
+.cpc {
+    margin-top: -120px !important;
+}
+
+.activate {
+    background-color: #4472c4;
+    margin-top: -70px !important;
+}
+
+.properties {
+    background-color: #5dba7a;
+    height: 120px !important;
+    margin-top: -150px !important;
+}
+
+.inventory {
+    background-color: #ffb600;
+    height: 80px !important;
+    margin-top: -110px !important;
+}
+
+.duplicate {
+    background-color: #04a1cb;
+    height: 120px !important;
+    margin-top: -150px !important;
+}
+
+#ButtonsBox {
+    position: absolute;
+    z-index: 4000;
+    width: 175px !important;
+    font-size: 14px;
+    height: 40px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    white-space: initial;
 }

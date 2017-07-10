@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 4000;
     width: 200px;
-    height: 70px;
+    height: 45px;
     margin-top: 60px !important;
     font-size: 14px;
     font-family: "Helvetica Neue";
@@ -28,7 +28,7 @@
     padding: 10px;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: #187BF8;
     top: 0;
     bottom: 0;
@@ -39,6 +39,10 @@
 
 .tabBox {
     height: 120px !important;
+}
+
+.SiteBox {
+    height: 60px !important
 }
 
 .highlight {
