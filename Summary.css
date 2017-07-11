@@ -15,7 +15,7 @@
     border-radius: 10px !important;
 }
 
-#DayBox {
+#Box {
     position: absolute;
     z-index: 4000;
     width: 200px;

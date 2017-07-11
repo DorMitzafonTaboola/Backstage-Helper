@@ -1,0 +1,24 @@
+#sideBar {
+    position: absolute;
+    z-index: 4000;
+    width: 250px;
+    height: 140px;
+    font-size: 14px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #187BF8;
+    top: 0;
+    margin-left: 180px !important;
+    margin-top: 60px !important;
+    margin: auto;
+    white-space: initial;
+}
+
+.managementBox {
+    height: 80px !important
+}

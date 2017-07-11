@@ -1,18 +1,15 @@
 var inventoryCampaign = $('tbody tr:first-child');
 
-$(inventoryCampaign).addClass('campaign-item');
+$(inventoryCampaign).addClass('campaignItem');
 
+var imgsrc = chrome.extension.getURL('Taboola-Widget-Example.png');
 $(inventoryCampaign).mouseover(function() {
-    $(this).addClass('highlight-parent');
-    $(this).children().addClass('highlight');
-    $('td').addClass('special');
-    $(this).find('td span').css('color', 'black');
-    // $(this).children().toggleClass('special');
+    if (!$('.imageBox').length) {
+      $(inventoryCampaign).first().append("<div class='imageBox'><img id='demoImg' /><div><a target='_blank' id='demoLink' href='https://www.taboola.com/content-recommendation-demo'>Try it yourself!</div></a</div>");
+      $('#demoImg').attr('src', imgsrc);
+    }
 });
 
 $(inventoryCampaign).mouseleave(function() {
-    $(this).children().removeClass('highlight');
-    $(this).removeClass('highlight-parent');
-    $('td').removeClass('special');
-    $(this).find('td span').css('color', 'green');
+    $('.imageBox').remove();
 });

@@ -5,14 +5,16 @@
   "description": "Highlights important buttons and details on Backstage",
   "version": "1.0",
   "icons": {
-    "16": "Marker.png",
-    "48": "Marker.png",
-    "128": "Marker.png"
+    "16": "TaboolaIcon.png",
+    "48": "Taboola128.png",
+    "128": "Taboola128.png"
   },
 
   "browser_action": {
     "default_title": "BackStage Helper"
   },
+
+  "web_accessible_resources": ["Taboola-Widget-Example.png"],
 
   "background": {
     "scripts": ["jquery-3.2.1.min.js","background.js"]

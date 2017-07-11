@@ -75,22 +75,10 @@ $(reportTabs).find("[data-target='#platform_breakdown']").mouseleave(function() 
 });
 //End By Platform
 
-//By AM tab
-// $(reportTabs).find('#tab-byrep').mouseover(function() {
-//     $(this).append("<div id='Box' class='AMBox'>Select campaign summary by Account Manager</div>");
-// });
-// $(reportTabs).find('#tab-byrep').click(function() {
-//     $(reportTabs).parent().find('.AMBox').remove();
-// });
-// $(reportTabs).find('#tab-byrep').mouseleave(function() {
-//     $(reportTabs).parent().find('.AMBox').remove();
-// });
-//End By AM
-
 //By Audience Tab
 $(reportTabs).find("[data-target='#user_segment_breakdown']").mouseover(function() {
     if(!$('#Box').length) {
-      $(this).append("<div id='Box' class='AudienceBox'>This report will show your campaign data by audience</div>");
+      $(this).append("<div id='Box' class='AudienceBox'>This report will show your campaigns data by audience</div>");
     }
 });
 $(reportTabs).find("[data-target='#user_segment_breakdown']").mouseleave(function() {
