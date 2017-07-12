@@ -65,7 +65,7 @@ $('.activate-border').mouseleave(function() {
 
 $('.properties-border').mouseover(function() {
     if (!$('#ButtonsBox').length) {
-      $(managementBar).append("<div id='ButtonsBox' class='properties'>Takes you to the Edit Campaign page, where you can edit your campaign settings including CPC, budget, and targeting</div>");
+      $(managementBar).append("<div id='ButtonsBox' class='properties'>Takes you to the Edit Campaign page, where you can edit your campaign settings including CPC, budget, and targeting.</div>");
       $(this).removeAttr('title');
     }
 });
@@ -76,7 +76,7 @@ $('.properties-border').mouseleave(function() {
 
 $('.EditInventory-border').mouseover(function() {
     if (!$('#ButtonsBox').length) {
-      $(managementBar).append("<div id='ButtonsBox' class='inventory'>Takes you to the Campaign Inventory page, where all campaign items are stored</div>");
+      $(managementBar).append("<div id='ButtonsBox' class='inventory'>Takes you to the Campaign Inventory page, where all campaign items are stored.</div>");
       $(this).removeAttr('title');
     }
 });
@@ -87,7 +87,7 @@ $('.EditInventory-border').mouseleave(function() {
 
 $('.DupInventory-border').mouseover(function() {
     if (!$('#ButtonsBox').length) {
-      $(managementBar).append("<div id='ButtonsBox' class='duplicate'>Takes you to the New Campaign page, where you can update any of the duplicated campaign properties you want to change</div>");
+      $(managementBar).append("<div id='ButtonsBox' class='duplicate'>Takes you to the New Campaign page, where you can update any of the duplicated campaign properties you want to change.</div>");
       $(this).removeAttr('title');
     }
 });

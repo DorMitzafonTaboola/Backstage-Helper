@@ -69,7 +69,13 @@
 }
 
 .thumbnail {
-    height: 100px;
+    height: 100px !important;
+    margin-top: -145px !important;
+}
+
+.title {
+    height: 75px !important;
+    margin-top: -120px !important;
 }
 
 #selector {
