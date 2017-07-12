@@ -2,8 +2,8 @@
     position: absolute;
     z-index: 4000;
     width: 250px;
-    height: 140px;
-    font-size: 14px;
+    height: 120px;
+    font-size: 12px;
     font-family: "Helvetica Neue";
     font-weight: bold;
     text-align: left;
@@ -19,6 +19,14 @@
     white-space: initial;
 }
 
-.managementBox {
+.minHeight {
     height: 80px !important
+}
+
+.pixelHeight {
+    height: 140px !important
+}
+
+.maxHeight {
+    height: 160px !important
 }

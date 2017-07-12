@@ -19,10 +19,10 @@ function click(e) {
             chrome.tabs.executeScript({file: "Management.js"});
             chrome.tabs.insertCSS({file: "Management.css"});
         }
-        else
+        else if (specTab.title == "Campaigns: Campaign Inventory Edit Update")
         {
             chrome.tabs.executeScript({file: "Inventory.js"});
-            chrome.tabs.insertCSS({file: "topCampaignContent.css"});
+            chrome.tabs.insertCSS({file: "Inventory.css"});
         }
     });
 }

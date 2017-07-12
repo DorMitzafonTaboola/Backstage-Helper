@@ -1,0 +1,91 @@
+#campaignItem {
+    border: 3px solid !important;
+    border-color: #63C786 !important;
+}
+#imageBox {
+    position: absolute;
+    width: 600px !important;
+    height: 320px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-top: 20px;
+    border-color: #63C786 !important;
+    border: 3px solid;
+}
+
+#preview {
+    height: 20px;
+    text-align: center !important;
+    font-size: 36px;
+}
+
+#demoImg {
+    width: 600px;
+    height: 250px;
+    margin-top: 50px !important
+}
+
+#demoLink {
+  position: absolute;
+  height: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  text-align: center;
+  font-weight: bolder;
+  color: blue;
+  text-decoration: underline;
+  left: 0;
+  right: 0;
+}
+
+.headline-border {
+    border: 1px solid;
+    border-color: white !important;
+    background-color: #187BF8 !important;
+}
+
+#expBubble {
+   font-family: "Helvetica Neue";
+   font-weight: bold;
+   text-align: left;
+   padding: 5px;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   width: 200px;
+   height: 80px;
+   background: black;
+   white-space: initial;
+   position: absolute;
+   left: 0;
+   margin: auto;
+   margin-top: -125px;
+   margin-left: -100px !important;
+}
+
+.thumbnail {
+    height: 100px;
+}
+
+#selector {
+    background-repeat: no-repeat;
+    border-radius: 9px;
+    width: 18px;
+    background: rgba(202,218,244,.4);
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #36c;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 5px;
+    font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    cursor: default;
+    position: absolute;
+}
