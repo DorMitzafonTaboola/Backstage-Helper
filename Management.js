@@ -7,10 +7,10 @@ $(managementBar).find('.fa-files-o').first().parent().addClass('DupInventory-bor
 
 //Headlines
 $('#sort-campaigns-spending_limit, #sort-campaigns-cpc, #sort-campaigns-spending_model, #sort-campaigns-daily_spending_limit').css("text-align","left");
-$('#sort-campaigns-spending_limit').append("<span id='selector' class='limit'>?</span>");
-$('#sort-campaigns-cpc').append("<span id='selector' class='cpcHead'>?</span>");
-$('#sort-campaigns-spending_model').append("<span id='selector' class='model'>?</span>");
-$('#sort-campaigns-daily_spending_limit').append("<span id='selector' class='dailyAd'>?</span>");
+$('#sort-campaigns-spending_limit').append("<a id='selector' class='limit'>?</a>");
+$('#sort-campaigns-cpc').append("<a id='selector' class='cpcHead'>?</a>");
+$('#sort-campaigns-spending_model').append("<a id='selector' class='model'>?</a>");
+$('#sort-campaigns-daily_spending_limit').append("<a id='selector' class='dailyAd'>?</a>");
 
 //Spending Model headline
 $('.model').mouseover(function() {

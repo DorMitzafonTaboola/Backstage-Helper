@@ -34,7 +34,7 @@
   height: 20px;
   margin-top: 20px;
   font-size: 14px;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
   font-weight: bolder;
   color: blue;
@@ -50,7 +50,7 @@
 }
 
 #expBubble {
-   font-family: "Helvetica Neue";
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
    font-weight: bold;
    text-align: left;
    padding: 5px;

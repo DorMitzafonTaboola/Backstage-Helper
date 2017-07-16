@@ -85,7 +85,7 @@
     width: 175px !important;
     font-size: 12px;
     height: 100px;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
     text-align: left;
     padding: 5px;
@@ -101,7 +101,7 @@
 }
 
 #expBubble {
-   font-family: "Helvetica Neue";
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
    font-weight: bold;
    text-align: left;
    padding: 5px;

@@ -9,11 +9,6 @@ function click(e) {
             chrome.tabs.executeScript({file: "Summary.js"});
             chrome.tabs.insertCSS({file: "Summary.css"});
         }
-        else if (specTab.title == "Campaigns: Top Campaign Content")
-        {
-            chrome.tabs.executeScript({file: "topCampaignContent.js"});
-            chrome.tabs.insertCSS({file: "topCampaignContent.css"});
-        }
         else if (specTab.title == "Campaigns: Campaign Management")
         {
             chrome.tabs.executeScript({file: "Management.js"});
