@@ -3,6 +3,7 @@ topContent = $('.main-nav').find("[data-menu-item-id='top-campaign-content']");
 management = $('.main-nav').find("[data-menu-item-id='campaign-management']");
 pixel = $('.main-nav').find("[data-menu-item-id='pixel-management']");
 billing = $('.main-nav').find("[data-menu-item-id='payment-methods']");
+$('.main-nav').addClass('.extensionEnabled')
 
 $(summary).mouseover(function() {
     if (!$('#sideBar').length) {

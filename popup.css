@@ -6,9 +6,11 @@
   text-align: center;
   padding: 5px;
   color: white;
-  border: none;
+  border: 2px solid;
+  border-color: #417cc3;
   display: flex;
   margin: 5px;
+  outline: none;
 }
 
 #body {
@@ -46,4 +48,9 @@
   height: 100px;
   width: 100px;
   margin-top: -30px;
+}
+
+.hoverButton {
+  color: #5dba7a;
+  border-color: #5dba7a;
 }
