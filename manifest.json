@@ -11,16 +11,16 @@
   },
 
   "browser_action": {
+    "default_popup": "popup.html",
     "default_title": "BackStage Helper"
   },
 
   "web_accessible_resources": ["Taboola-Widget-Example.png"],
 
   "background": {
-    "scripts": ["jquery-3.2.1.min.js","background.js"]
+    "scripts": ["jquery-3.2.1.min.js"]
   },
   "permissions": [
-    "background",
     "activeTab",
     "tabs",
     "https://backstage.taboola.com/*"

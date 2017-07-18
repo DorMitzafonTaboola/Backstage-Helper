@@ -1,6 +1,7 @@
 //Buttons on right side
 var managementBar = $('tr:first-child td:last-child');
 $(managementBar).find('a:first-child').addClass('activate-border');
+$('#btn-new-campaign').addClass('newCampaign');
 $(managementBar).find('.fa-pencil').first().parent().addClass('properties-border');
 $(managementBar).find('.fa-list').first().parent().addClass('EditInventory-border');
 $(managementBar).find('.fa-files-o').first().parent().addClass('DupInventory-border');

@@ -1,7 +1,8 @@
-//#Campaign summary
 var reportTabs = $('#report-tabs');
 $(reportTabs).find('a').addClass('toolBar-border');
 $(reportTabs).children().css("position", "relative");
+$('.legend-container').addClass('statusBox');
+$('.perspective-container').addClass('dateBox');
 
 $('.legend-container').mouseover(function() {
     $(this).addClass('highlight');
