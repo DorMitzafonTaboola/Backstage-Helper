@@ -2,7 +2,9 @@ This chrome extension highlights important tabs/buttons under "Campaigns" on the
 
   Campaign summary
   
-  Top campaign content
+  Campaign Inventory
   
   Campaign management
+  
+  Sidebar buttons
   
