@@ -13,8 +13,8 @@ $('#sort-campaigns-cpc').append("<a id='selector' class='cpcHead'>?</a>");
 $('#sort-campaigns-spending_model').append("<a id='selector' class='model'>?</a>");
 $('#sort-campaigns-daily_spending_limit').append("<a id='selector' class='dailyAd'>?</a>");
 
-//Spending Model headline
-$('.model, .limit, .dailyAd, .cpcHead').mouseover(function() {
+//Headlines and New campaign button
+$('.model, .limit, .dailyAd, .cpcHead, .newCampaign').mouseover(function() {
     if (!$('#expBubble').length) {
       if ($(this).hasClass('model')) {
         appendDiv(this ,"expBubble", "spendingModel", "Here you will see if your budget is set to spend on a recurring monthly basis or if the budget set is the total budget for the campaign. There are two Spending Model options: Monthly flight & Entire campaign.");
@@ -28,14 +28,17 @@ $('.model, .limit, .dailyAd, .cpcHead').mouseover(function() {
       if ($(this).hasClass('cpcHead')) {
         appendDiv(this ,"expBubble", "cpc", "Cost Per Click, is the amount of money you will pay each time a user clicks on your campaign item.");
       }
+      if ($(this).hasClass('newCampaign')) {
+        appendDiv(this ,"expBubble", "campaignBox", "Click to open a new campaign");
+      }
     }
 });
-$('.model, .limit, .dailyAd, .cpcHead').mouseleave(function() {
+$('.model, .limit, .dailyAd, .cpcHead, .newCampaign').mouseleave(function() {
     $('#expBubble').remove();
 });
 
 //right Tab buttons
-$('.activate-border, .properties-border, .EditInventory-border, .DupInventory-border').mouseover(function() {
+$('.activate-border, .properties-border, .EditInventory-border, .DupInventory-border, .newCampaign').mouseover(function() {
     if (!$('#ButtonsBox').length) {
       if ($(this).hasClass('activate-border')) {
         appendDiv(managementBar, "ButtonsBox", "activate", "Click to activate or Pause your campaign.");
