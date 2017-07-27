@@ -24,11 +24,5 @@
     "activeTab",
     "tabs",
     "https://backstage.taboola.com/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["https://backstage.taboola.com/*"],
-      "js": ["myscript.js"]
-    }
   ]
 }
