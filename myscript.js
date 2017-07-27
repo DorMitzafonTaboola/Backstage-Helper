@@ -1,16 +1,12 @@
-// chrome.extension.onConnect.addListener(function(port) {
-//       console.log("Connected .....");
-//       port.onMessage.addListener(function(msg) {
-//            console.log(msg);
-//            console.log($('.main-nav').hasClass('extensionEnabled'));
-//            chrome.tabs.query({currentWindow:true, active:true}, function(tabs) {
-//              console.log()
-//             //  if ($('.main-nav').hasClass('extensionEnabled')) {
-//             //    port.postMessage("true");
-//             //  }
-//             //  else {
-//             //    port.postMessage("false");
-//             //  }
-//            });
-//       });
-//  })
+// var port = chrome.runtime.connect();
+//
+// window.addEventListener("message", function(event) {
+//   // We only accept messages from ourselves
+//   if (event.source != window)
+//     return;
+//
+//   if (event.data.type && (event.data.type == "FROM_PAGE")) {
+//     console.log("Content script received: " + event.data.text);
+//     port.postMessage(event.data.text);
+//   }
+// }, false);

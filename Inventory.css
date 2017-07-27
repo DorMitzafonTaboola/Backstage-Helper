@@ -1,3 +1,20 @@
+.textFrame {
+    border: 3px solid !important;
+    border-color: #FFCB0A !important;
+}
+
+.highlight {
+    box-shadow: 3px 3px 15px #666 !important;
+    background: #FFCB0A !important;
+    cursor: pointer !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    zoom: 1 !important;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+}
+
 #campaignItem {
     border: 3px solid !important;
     border-color: #63C786 !important;
@@ -62,20 +79,30 @@
    background: black;
    white-space: initial;
    position: absolute;
-   left: 0;
-   margin: auto;
-   margin-top: -125px;
+   margin-top: -100px;
    margin-left: -100px !important;
+}
+
+.addButton {
+    height: 20px !important;
+    width: 190px !important;
+    /*margin-top: -100px !important;*/
+    margin: auto;
+    right: 20px;
 }
 
 .thumbnail {
     height: 100px !important;
     margin-top: -145px !important;
+    margin: auto;
+    left: 0;
 }
 
 .title {
     height: 75px !important;
     margin-top: -120px !important;
+    margin: auto;
+    left: 0;
 }
 
 #selector {

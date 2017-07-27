@@ -6,7 +6,7 @@
   "version": "1.0",
   "icons": {
     "16": "TaboolaIcon.png",
-    "48": "Taboola128.png",
+    "48": "TaboolaIcon.png",
     "128": "Taboola128.png"
   },
 
@@ -18,11 +18,17 @@
   "web_accessible_resources": ["Taboola-Widget-Example.png"],
 
   "background": {
-    "scripts": ["jquery-3.2.1.min.js", "myscript.js"]
+    "scripts": ["jquery-3.2.1.min.js"]
   },
   "permissions": [
     "activeTab",
     "tabs",
     "https://backstage.taboola.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://backstage.taboola.com/*"],
+      "js": ["myscript.js"]
+    }
   ]
 }

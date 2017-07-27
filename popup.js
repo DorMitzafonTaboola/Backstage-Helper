@@ -5,8 +5,6 @@ $('#enable').click(function() {
   chrome.tabs.query({currentWindow:true, active:true}, function(tabs) {
       var specTab = tabs[0];
       chrome.tabs.executeScript({file: "jquery-3.2.1.min.js"});
-      chrome.tabs.executeScript({file: "Campaigns.js"});
-      chrome.tabs.insertCSS({file: "Campaigns.css"});
       if (specTab.title == "Campaigns: Campaign Summary")
       {
           chrome.tabs.executeScript({file: "Summary.js"});
@@ -22,6 +20,8 @@ $('#enable').click(function() {
           chrome.tabs.executeScript({file: "Inventory.js"});
           chrome.tabs.insertCSS({file: "Inventory.css"});
       }
+      chrome.tabs.executeScript({file: "Campaigns.js"});
+      chrome.tabs.insertCSS({file: "Campaigns.css"});
   });
 });
 
@@ -29,22 +29,7 @@ $('#disable').click(function() {
   $(this).prop('disabled', 'true');
   $('#enable').removeAttr('disabled');
   $(this).removeClass('hoverButton');
-  chrome.tabs.query({currentWindow:true, active:true}, function(tabs) {
-    var specTab = tabs[0];
-    chrome.tabs.executeScript({file: "disableCampaigns.js"});
-    if (specTab.title == "Campaigns: Campaign Summary")
-    {
-        chrome.tabs.executeScript({file: "disableSummary.js"});
-    }
-    else if (specTab.title == "Campaigns: Campaign Management")
-    {
-        chrome.tabs.executeScript({file: "disableManagement.js"});
-    }
-    else if (specTab.title == "Campaigns: Campaign Inventory Edit Update")
-    {
-        chrome.tabs.executeScript({file: "disableInventory.js"});
-    }
-  });
+  chrome.tabs.executeScript({file: "RefreshPage.js"});
 });
 
 if(!$('#disable').attr('disabled')) {
@@ -64,11 +49,3 @@ if(!$('#enable').attr('disabled')) {
 $('#enable').mouseleave(function() {
     $(this).removeClass('hoverButton');
 });
-
-// var port = chrome.extension.connect({
-//      name: "talk to browser"
-// });
-// port.postMessage("is the extension enabled?");
-// port.onMessage.addListener(function(msg) {
-//      console.log(msg);
-// });

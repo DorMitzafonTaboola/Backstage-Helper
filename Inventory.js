@@ -1,6 +1,9 @@
 var inventoryCampaign = $('tbody tr:first-child');
-
 $(inventoryCampaign).attr('id','campaignItem');
+
+var textArea  = $('.paste-buff textarea');
+$(textArea).addClass('textFrame');
+$('#okBtn').addClass('textFrame');
 
 var widgetSrc = chrome.extension.getURL('Taboola-Widget-Example.png');
 $(inventoryCampaign).mouseover(function() {
@@ -25,25 +28,31 @@ $('#imageBox, #campaignItem').mouseleave(function(){
     }, 100);
 });
 
+$(textArea).mouseover(function() {
+    $(this).addClass('highlight');
+});
+
+$(textArea).mouseleave(function() {
+    $(this).removeClass('highlight');
+});
+
 $('#sort-campaign_invnentory-title').append("<a id='selector' class='titleHead'>?</a>");
 $('#sort-campaign_invnentory-title').prev().append("<a id='selector' class='thumbnailHead'>?</a>");
 
-$('.thumbnailHead').mouseover(function() {
+$('.thumbnailHead, .titleHead, #okBtn').mouseover(function() {
     if (!$('#expBubble').length) {
-      $(this).append("<div id='expBubble' class='thumbnail'>Your thumbnail size must a have a minimum width of 600px and a minimum length of 500px. Your thumbnail file size must be no more than 1 MB.</div>")
+      if ($(this).hasClass('thumbnailHead')) {
+        $(this).append("<div id='expBubble' class='thumbnail'>Your thumbnail size must a have a minimum width of 600px and a minimum length of 500px. Your thumbnail file size must be no more than 1 MB.</div>");
+      }
+      if ($(this).hasClass('titleHead')) {
+        $(this).append("<div id='expBubble' class='title'>Your title character length must have 35-45 characters. Titles must make sense and must only contain correctly spelled words.</div>");
+      }
+      if ($(this).hasClass('textFrame')) {
+        $('.form-body').append("<div id='expBubble' class='addButton'>Click here to add a new item.</div>");
+      }
     }
 });
 
-$('.thumbnailHead').mouseleave(function() {
+$('.thumbnailHead, .titleHead').add('#okBtn').mouseleave(function() {
     $('#expBubble').remove();
-})
-
-$('.titleHead').mouseover(function() {
-    if (!$('#expBubble').length) {
-      $(this).append("<div id='expBubble' class='title'>Your title character length must have 35-45 characters. Titles must make sense and must only contain correctly spelled words.</div>")
-    }
 });
-
-$('.titleHead').mouseleave(function() {
-    $('#expBubble').remove();
-})
