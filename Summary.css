@@ -3,7 +3,7 @@
     border-color: #FFCB0A !important;
     border-radius: 4px !important;
 }
-.dateBox {
+.dateRange {
     border: 5px solid !important;
     border-radius: 10px !important;
     border-color: #63C786 !important;
@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 4000;
     width: 200px;
-    height: 35px;
+    height: 40px;
     margin-top: 60px !important;
     font-size: 12px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -37,12 +37,15 @@
     margin: auto;
 }
 
-.tabBox {
-    height: 100px !important;
+.dateBox {
+    background-color: #63C786 !important;
+    top: 10px !important;
+    height: 40px !important;
+    width: 150px !important;
 }
 
-.SiteBox {
-    height: 40px !important
+.tabBox {
+    height: 100px !important;
 }
 
 .highlight {
