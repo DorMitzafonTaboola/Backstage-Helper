@@ -1,10 +1,4 @@
-This chrome extension highlights important tabs/buttons under "Campaigns" on these following pages:
+This extension makes the backstage more accessible for you by highlighting important buttons. Once you put your mouse over these buttons, an explanation will popup for your comfort and ease.
 
-  Campaign summary
-  
-  Campaign Inventory
-  
-  Campaign management
-  
-  Sidebar buttons
-  
+Click on Taboola's icon on the top right corner and the Backstage helper popup will appear, press enable to activate and disable to deactivate.
+Taboola Backstage helper provided by Taboola.
